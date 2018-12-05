@@ -16,7 +16,7 @@ public class PUser {
     private String fAccount;
 
     /**
-     * 姓名1
+     * 姓名
      */
     @Column(name = "F_REALNAME")
     private String fRealname;
