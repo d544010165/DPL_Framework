@@ -6,6 +6,7 @@ import org.apache.ibatis.annotations.Param;
 
 public interface PUserMapper extends MyMapper<PUser> {
 
+
     /**
      * 更新用户头像
      * @param id 用户id
