@@ -44,7 +44,7 @@ public class LoginController {
     @RequestMapping(value = "/login", method = {RequestMethod.POST})
     public String login(
 //            HttpServletRequest request,
-            SysUser sysUser) throws Exception {
+            SysUser sysUser){
     	System.out.println("登录账号:"+sysUser.getfAccount());
     	System.out.println("登录密码:"+sysUser.getfPassword());
     	//Shiro实现登录
