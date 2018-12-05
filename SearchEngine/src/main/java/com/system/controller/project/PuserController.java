@@ -104,7 +104,12 @@ public class PuserController {
 	}
 */
 
-	@RequestMapping(value = "/upload", method = RequestMethod.POST)
+	/**
+	 * @author dengpeilin
+	 * @description  用户头像上传
+	 */
+	@ApiOperation(value = "用户头像上传", notes = "用户管理", httpMethod = "POST", response = Result.class, produces = MediaType.APPLICATION_JSON_VALUE)
+	@RequestMapping(value = "/upload")
 	@ResponseBody
 	public Result handleUpload(HttpServletRequest request,
 				@RequestParam("file") CommonsMultipartFile file) throws Exception {
