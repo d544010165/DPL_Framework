@@ -71,7 +71,7 @@ public class PuserController {
 			@ApiImplicitParam(name = "fHeadicon", value = "头像", dataType = "String", paramType = "query"),
 			@ApiImplicitParam(name = "fGender", value = "性别", dataType = "Integer", paramType = "query", required = true),
 			@ApiImplicitParam(name = "fBirthday", value = "生日", dataType = "Date", paramType = "query", required = true),
-			@ApiImplicitParam(name = "fMobilephone", value = "手机", dataType = "String", paramType = "query", required = true),
+			@ApiImplicitParam(name = "fMobilephone", value = "手机号码", dataType = "String", paramType = "query", required = true),
 			@ApiImplicitParam(name = "fEmail", value = "邮箱", dataType = "String", paramType = "query"),
 			@ApiImplicitParam(name = "fWechat", value = "微信", dataType = "String", paramType = "query"),
 			@ApiImplicitParam(name = "fSignature", value = "个性签名", dataType = "String", paramType = "query"),
