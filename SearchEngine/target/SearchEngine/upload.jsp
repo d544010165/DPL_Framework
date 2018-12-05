@@ -21,9 +21,9 @@
 <body>
 <%--<form action="${pageContext.request.contextPath}/public/user/uploadHeadIcon" method="POST" name="xiangmu" id="xiangmu"
       enctype="multipart/form-data">
-    <table>
+    <table>  
         <tr>
-            <td>头像上传：</td>
+            <td>头像上传： </td>
             <td><input type=file name="myfiles" id="doc"
                        onchange="showImage();">
             </td>

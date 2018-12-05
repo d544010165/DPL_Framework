@@ -22,9 +22,9 @@ import com.system.util.encryption.MD5Util;
 
 //@Controller
 public class LoginController {
-	
-	@Autowired
-	private SysLogService sysLogService;
+
+//	@Autowired
+//	private SysLogService sysLogService;
 	
 	
 	/*//登录跳转
@@ -42,7 +42,9 @@ public class LoginController {
 
     //登录表单处理
     @RequestMapping(value = "/login", method = {RequestMethod.POST})
-    public String login(HttpServletRequest request,SysUser sysUser) throws Exception {
+    public String login(
+//            HttpServletRequest request,
+            SysUser sysUser) throws Exception {
     	System.out.println("登录账号:"+sysUser.getfAccount());
     	System.out.println("登录密码:"+sysUser.getfPassword());
     	//Shiro实现登录
