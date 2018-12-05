@@ -8,8 +8,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5396e1b4-bfc2-46a3-9414-e21c10bd4ae6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SearchEngine/WEB-INF/classes/com/system/controller/login/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SearchEngine/WEB-INF/classes/com/system/controller/login/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/system/controller/login/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/system/controller/login/LoginController.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,7 +38,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/system/service/project/PUserService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="638">
+            <state>
               <caret line="29" column="41" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -73,7 +71,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/system/dao/sourceCms/project/PUserMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
+            <state relative-caret-position="377">
               <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -85,8 +83,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/system/controller/login/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1">
-              <caret line="42" selection-start-line="42" selection-end-line="42" />
+            <state relative-caret-position="443">
+              <caret line="55" column="9" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -150,6 +148,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/system/util/fileUpload/FileUpload.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/system/util/fileUpload/FileUpload_not_use.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/system/dao/sourceCms/project/PUserMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/system/bean/project/PUser.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/system/controller/login/LoginController.java" />
       </list>
     </option>
@@ -432,7 +431,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543996702018" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543997645851" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -557,7 +556,7 @@
       <workItem from="1543970554514" duration="5828000" />
       <workItem from="1543981848549" duration="213000" />
       <workItem from="1543982823812" duration="2641000" />
-      <workItem from="1543994685341" duration="2014000" />
+      <workItem from="1543994685341" duration="2956000" />
     </task>
     <task id="LOCAL-00001" summary="测试修改了该项目">
       <created>1543996099494</created>
@@ -573,11 +572,18 @@
       <option name="project" value="LOCAL" />
       <updated>1543996220188</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="测试修改了该项目">
+      <created>1543996789151</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1543996789151</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58404000" />
+    <option name="totallyTimeSpent" value="59346000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -598,7 +604,7 @@
       <window_info id="Favorites" order="3" sideWeight="0.5011013" side_tool="true" weight="0.24983476" />
       <window_info id="Web" order="4" sideWeight="0.5032467" side_tool="true" weight="0.19402985" />
       <window_info id="Designer" order="5" />
-      <window_info content_ui="combo" id="Project" order="6" sideWeight="0.49675325" visible="true" weight="0.18603411" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" sideWeight="0.49675325" visible="true" weight="0.18603411" />
       <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Spring" order="0" weight="0.32900432" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.32929516" />
@@ -607,7 +613,7 @@
       <window_info anchor="bottom" id="Messages" order="4" weight="0.30227518" />
       <window_info anchor="bottom" id="Java Enterprise" order="5" weight="0.32900432" />
       <window_info anchor="bottom" id="Database Changes" order="6" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.21451788" />
+      <window_info anchor="bottom" id="Version Control" order="7" visible="true" weight="0.21451788" />
       <window_info anchor="bottom" id="Application Servers" order="8" weight="0.32792208" />
       <window_info anchor="bottom" id="Message" order="9" />
       <window_info anchor="bottom" id="Find" order="10" weight="0.29761904" />
@@ -704,13 +710,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
           <caret line="63" column="24" selection-start-line="63" selection-start-column="24" selection-end-line="63" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/system/bean/project/PUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-601">
-          <caret line="6" selection-start-line="6" selection-end-line="7" />
         </state>
       </provider>
     </entry>
@@ -1023,7 +1022,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/system/service/project/PUserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
+        <state>
           <caret line="29" column="41" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1048,9 +1047,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/system/bean/project/PUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/system/dao/sourceCms/project/PUserMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
+        <state relative-caret-position="377">
           <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1060,8 +1066,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/system/controller/login/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        <state relative-caret-position="443">
+          <caret line="55" column="9" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
         </state>
       </provider>
     </entry>

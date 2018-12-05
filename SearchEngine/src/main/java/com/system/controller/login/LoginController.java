@@ -53,7 +53,7 @@ public class LoginController {
         System.out.println(">>>>>>>>>>>>>  1");
         Subject subject = SecurityUtils.getSubject();
         System.out.println(">>>>>>>>>>>>>  2");
-        
+
         //如果获取不到用户名就是登录失败，但登录失败的话，会直接抛出异常
         subject.login(token);
         if (subject.hasRole("admin")) {
