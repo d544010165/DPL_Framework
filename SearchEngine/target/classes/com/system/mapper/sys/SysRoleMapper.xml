@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.system.dao.sourceManage.sys.SysRoleMapper">
+  <resultMap id="BaseResultMap" type="com.system.bean.sys.SysRole">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="F_ID" jdbcType="VARCHAR" property="fId" />
+    <result column="F_ORGANIZEID" jdbcType="VARCHAR" property="fOrganizeid" />
+    <result column="F_CATEGORY" jdbcType="DECIMAL" property="fCategory" />
+    <result column="F_ENCODE" jdbcType="VARCHAR" property="fEncode" />
+    <result column="F_FULLNAME" jdbcType="VARCHAR" property="fFullname" />
+    <result column="F_TYPE" jdbcType="VARCHAR" property="fType" />
+    <result column="F_RESPONSIBILITY" jdbcType="VARCHAR" property="fResponsibility" />
+    <result column="F_ALLOWEDIT" jdbcType="DECIMAL" property="fAllowedit" />
+    <result column="F_ALLOWDELETE" jdbcType="DECIMAL" property="fAllowdelete" />
+    <result column="F_SORTCODE" jdbcType="DECIMAL" property="fSortcode" />
+    <result column="F_DELETEMARK" jdbcType="DECIMAL" property="fDeletemark" />
+    <result column="F_ENABLEDMARK" jdbcType="DECIMAL" property="fEnabledmark" />
+    <result column="F_DESCRIPTION" jdbcType="VARCHAR" property="fDescription" />
+    <result column="F_CREATORTIME" jdbcType="TIMESTAMP" property="fCreatortime" />
+    <result column="F_CREATORUSERID" jdbcType="VARCHAR" property="fCreatoruserid" />
+    <result column="F_LASTMODIFYTIME" jdbcType="TIMESTAMP" property="fLastmodifytime" />
+    <result column="F_LASTMODIFYUSERID" jdbcType="VARCHAR" property="fLastmodifyuserid" />
+    <result column="F_DELETETIME" jdbcType="TIMESTAMP" property="fDeletetime" />
+    <result column="F_DELETEUSERID" jdbcType="VARCHAR" property="fDeleteuserid" />
+    <result column="F_TEMPLATEID" jdbcType="VARCHAR" property="fTemplateid" />
+  </resultMap>
+</mapper>

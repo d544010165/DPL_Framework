@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.system.dao.sourceCms.project.POrganizeMapper" >
+  <resultMap id="BaseResultMap" type="com.system.bean.project.POrganize" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="F_ID" property="fId" jdbcType="VARCHAR" />
+    <result column="F_PARENTID" property="fParentid" jdbcType="VARCHAR" />
+    <result column="F_LAYERS" property="fLayers" jdbcType="DECIMAL" />
+    <result column="F_ENCODE" property="fEncode" jdbcType="VARCHAR" />
+    <result column="F_FULLNAME" property="fFullname" jdbcType="VARCHAR" />
+    <result column="F_SHORTNAME" property="fShortname" jdbcType="VARCHAR" />
+    <result column="F_CATEGORYID" property="fCategoryid" jdbcType="VARCHAR" />
+    <result column="F_MANAGERID" property="fManagerid" jdbcType="VARCHAR" />
+    <result column="F_TELEPHONE" property="fTelephone" jdbcType="VARCHAR" />
+    <result column="F_MOBILEPHONE" property="fMobilephone" jdbcType="VARCHAR" />
+    <result column="F_WECHAT" property="fWechat" jdbcType="VARCHAR" />
+    <result column="F_FAX" property="fFax" jdbcType="VARCHAR" />
+    <result column="F_EMAIL" property="fEmail" jdbcType="VARCHAR" />
+    <result column="F_AREAID" property="fAreaid" jdbcType="VARCHAR" />
+    <result column="F_ADDRESS" property="fAddress" jdbcType="VARCHAR" />
+    <result column="F_SORTCODE" property="fSortcode" jdbcType="DECIMAL" />
+    <result column="F_DELETEMARK" property="fDeletemark" jdbcType="DECIMAL" />
+    <result column="F_ENABLEDMARK" property="fEnabledmark" jdbcType="DECIMAL" />
+    <result column="F_DESCRIPTION" property="fDescription" jdbcType="VARCHAR" />
+    <result column="F_CREATORTIME" property="fCreatortime" jdbcType="TIMESTAMP" />
+    <result column="F_CREATORUSERID" property="fCreatoruserid" jdbcType="VARCHAR" />
+    <result column="F_LASTMODIFYTIME" property="fLastmodifytime" jdbcType="TIMESTAMP" />
+    <result column="F_LASTMODIFYUSERID" property="fLastmodifyuserid" jdbcType="VARCHAR" />
+    <result column="F_DELETETIME" property="fDeletetime" jdbcType="TIMESTAMP" />
+    <result column="F_DELETEUSERID" property="fDeleteuserid" jdbcType="VARCHAR" />
+  </resultMap>
+</mapper>

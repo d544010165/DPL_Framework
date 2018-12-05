@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.system.dao.sourceCms.project.PRoleMapper">
+
+  <resultMap id="BaseResultMap" type="com.system.bean.project.PRole">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="F_ID" jdbcType="VARCHAR" property="fId" />
+    <result column="F_ORGANIZEID" jdbcType="VARCHAR" property="fOrganizeid" />
+    <result column="F_CATEGORY" jdbcType="DECIMAL" property="fCategory" />
+    <result column="F_ENCODE" jdbcType="VARCHAR" property="fEncode" />
+    <result column="F_FULLNAME" jdbcType="VARCHAR" property="fFullname" />
+    <result column="F_RESPONSIBILITY" jdbcType="VARCHAR" property="fResponsibility" />
+    <result column="F_SORTCODE" jdbcType="DECIMAL" property="fSortcode" />
+    <result column="F_DELETEMARK" jdbcType="DECIMAL" property="fDeletemark" />
+    <result column="F_ENABLEDMARK" jdbcType="DECIMAL" property="fEnabledmark" />
+    <result column="F_DESCRIPTION" jdbcType="VARCHAR" property="fDescription" />
+    <result column="F_CREATORTIME" jdbcType="TIMESTAMP" property="fCreatortime" />
+    <result column="F_CREATORUSERID" jdbcType="VARCHAR" property="fCreatoruserid" />
+    <result column="F_LASTMODIFYTIME" jdbcType="TIMESTAMP" property="fLastmodifytime" />
+    <result column="F_LASTMODIFYUSERID" jdbcType="VARCHAR" property="fLastmodifyuserid" />
+    <result column="F_DELETETIME" jdbcType="TIMESTAMP" property="fDeletetime" />
+    <result column="F_DELETEUSERID" jdbcType="VARCHAR" property="fDeleteuserid" />
+  </resultMap>
+  
+  <!-- 通过用户名查找用户和角色信息 -->
+  <select id="selectRoleByName" parameterType="java.lang.String" resultMap="BaseResultMap"> 
+  		select r.F_FULLNAME,r.F_ID as id,r.F_ORGANIZEID,r.F_CATEGORY,r.F_RESPONSIBILITY,r.F_SORTCODE
+  		from P_USER u
+  		LEFT JOIN P_USERROLE ur ON ur.F_USERID = u.F_ID
+  		LEFT JOIN P_ROLE r ON r.F_ID = ur.F_ROLEID
+  		WHERE u.F_ACCOUNT =( #{f_account,jdbcType=VARCHAR} )
+  		AND u.F_DELETEMARK=0 AND u.F_ENABLEDMARK=1
+  		AND r.F_DELETEMARK=0 AND r.F_ENABLEDMARK=1
+  		AND ur.F_DELETEMARK=0 
+  </select>
+  
+  <select id="selectRoleByRoleName" parameterType="java.lang.String" resultMap="BaseResultMap"> 
+  		SELECT
+				p_role.F_ID,
+				p_role.F_ORGANIZEID,
+				p_role.F_CATEGORY,
+				p_role.F_ENCODE,
+				p_role.F_FULLNAME,
+				p_role.F_RESPONSIBILITY,
+				p_role.F_SORTCODE,
+				p_role.F_DELETEMARK,
+				p_role.F_ENABLEDMARK,
+				p_role.F_DESCRIPTION,
+				p_role.F_CREATORTIME,
+				p_role.F_CREATORUSERID,
+				p_role.F_LASTMODIFYTIME,
+				p_role.F_LASTMODIFYUSERID,
+				p_role.F_DELETETIME,
+				p_role.F_DELETEUSERID
+			FROM
+				p_role
+			WHERE
+				p_role.F_FULLNAME = #{roleName} AND
+				p_role.F_ENABLEDMARK = 1 AND
+				p_role.F_DELETEMARK = 0
+				
+  </select>
+  
+  
+</mapper>

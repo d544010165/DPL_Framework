@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.system.dao.sourceCms.project.PUserMapper">
+  <resultMap id="BaseResultMap" type="com.system.bean.project.PUser">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="F_ID" jdbcType="VARCHAR" property="fId" />
+    <result column="F_ACCOUNT" jdbcType="VARCHAR" property="fAccount" />
+    <result column="F_REALNAME" jdbcType="VARCHAR" property="fRealname" />
+    <result column="F_NICKNAME" jdbcType="VARCHAR" property="fNickname" />
+    <result column="F_HEADICON" jdbcType="VARCHAR" property="fHeadicon" />
+    <result column="F_GENDER" jdbcType="DECIMAL" property="fGender" />
+    <result column="F_BIRTHDAY" jdbcType="TIMESTAMP" property="fBirthday" />
+    <result column="F_MOBILEPHONE" jdbcType="VARCHAR" property="fMobilephone" />
+    <result column="F_EMAIL" jdbcType="VARCHAR" property="fEmail" />
+    <result column="F_WECHAT" jdbcType="VARCHAR" property="fWechat" />
+    <result column="F_MANAGERID" jdbcType="VARCHAR" property="fManagerid" />
+    <result column="F_SECURITYLEVEL" jdbcType="DECIMAL" property="fSecuritylevel" />
+    <result column="F_SIGNATURE" jdbcType="VARCHAR" property="fSignature" />
+    <result column="F_ORGANIZEID" jdbcType="VARCHAR" property="fOrganizeid" />
+    <result column="F_DEPARTMENTID" jdbcType="VARCHAR" property="fDepartmentid" />
+    <result column="F_DUTYID" jdbcType="VARCHAR" property="fDutyid" />
+    <result column="F_JOBNUMBER" jdbcType="VARCHAR" property="fJobnumber" />
+    <result column="F_ISADMINISTRATOR" jdbcType="DECIMAL" property="fIsadministrator" />
+    <result column="F_SORTCODE" jdbcType="DECIMAL" property="fSortcode" />
+    <result column="F_DELETEMARK" jdbcType="DECIMAL" property="fDeletemark" />
+    <result column="F_ENABLEDMARK" jdbcType="DECIMAL" property="fEnabledmark" />
+    <result column="F_DESCRIPTION" jdbcType="VARCHAR" property="fDescription" />
+    <result column="F_CREATORTIME" jdbcType="TIMESTAMP" property="fCreatortime" />
+    <result column="F_CREATORUSERID" jdbcType="VARCHAR" property="fCreatoruserid" />
+    <result column="F_LASTMODIFYTIME" jdbcType="TIMESTAMP" property="fLastmodifytime" />
+    <result column="F_LASTMODIFYUSERID" jdbcType="VARCHAR" property="fLastmodifyuserid" />
+    <result column="F_DELETETIME" jdbcType="TIMESTAMP" property="fDeletetime" />
+    <result column="F_DELETEUSERID" jdbcType="VARCHAR" property="fDeleteuserid" />
+    <result column="F_PASSWORD" jdbcType="VARCHAR" property="fPassword" />
+    <result column="F_SALT" jdbcType="VARCHAR" property="fSalt" />
+  </resultMap>
+
+  <!-- 更新用户头像 -->
+  <update id="updateHeadIcon">
+    UPDATE
+      p_user u
+    SET
+      u.F_HEADICON=#{avatar}
+    WHERE
+      u.F_ID=#{id}
+  </update>
+  
+</mapper>
