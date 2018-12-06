@@ -13,7 +13,7 @@ import java.util.Locale;
 /**
  * 
  * @title DateUtil.java
- * @author liyuanguo
+ * @author dengpeilin
  * @description 时间工具
  * @version V1.0
  */

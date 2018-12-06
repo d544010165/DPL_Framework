@@ -28,8 +28,7 @@ import com.system.service.project.PUserService;
 /**
  * 
  * @title UserRealm.java
- * @author liyuanguo
- * @time 2018年8月2日 下午5:14:27
+ * @author dengpeilin
  * @description 用户授权信息域
  * @version V1.0
  */
@@ -52,7 +51,7 @@ public class UserRealm extends AuthorizingRealm {
 	protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principalCollection) {
 		System.out.println(">>>>>>>>>>>>>  doGetAuthorizationInfo ");
 
-		//String account = (String) principals.getPrimaryPrincipal();
+//		String account = (String) principals.getPrimaryPrincipal();
 		String username = (String) getAvailablePrincipal(principalCollection);
 
         

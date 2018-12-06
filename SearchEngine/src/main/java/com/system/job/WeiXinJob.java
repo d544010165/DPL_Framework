@@ -14,6 +14,7 @@ import com.system.util.quartz.CommonUtil;
 public class WeiXinJob implements Job{
 
 	private SysUserService sysUserService;
+
 	@Override
 	public void execute(JobExecutionContext arg0) throws JobExecutionException {
 		System.out.println("定时执行");

@@ -33,27 +33,23 @@ import io.swagger.annotations.ApiOperation;
 public class AdminController {
 	
 	/**
-	  * 
+	  * 密码
 	  * @author dengpeilin
-	  * @time 2018年7月16日 下午3:02:02
-	  * @description 公共页面显示
 	  */
 	@ApiOperation(value = "公共角色主页",httpMethod="GET")
 	@RequestMapping("/public/showPublic")
-	public String showPublic() throws Exception {
+	public String showPublic(){
    	
        return "public/showPublic";
 	}
 	
 	 /**
-	  * 
+	  * 管理员页面显示
 	  * @author dengpeilin
-	  * @time 2018年7月16日 下午3:02:02
-	  * @description 管理员页面显示
 	  */
 	@ApiOperation(value = "管理员角色主页",httpMethod="GET")
     @RequestMapping("/admin/showAdmin")
-    public String showAdmin() throws Exception {
+    public String showAdmin(){
     	
         return "admin/showAdmin";
     }

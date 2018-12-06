@@ -38,10 +38,8 @@ public class SysLogController {
 
 	
 	/**
-	 * 
-	 * @author liyuanguo
-	 * @time 2018年8月23日 下午2:54:44
-	 * @description 分页查询数据
+	 * 分页查询数据
+	 * @author dengpeilin
 	 */
 	@ApiOperation(notes = "日志管理",value = "日志分页查询",response = Result.class,httpMethod = "POST",produces = MediaType.APPLICATION_JSON_VALUE)
 	@RequestMapping(value = "/queryAll")

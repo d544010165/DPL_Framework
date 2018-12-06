@@ -1,26 +1,20 @@
 package com.system.controller.login;
 
-import javax.annotation.Resource;
-import javax.servlet.http.HttpServletRequest;
-
 import com.system.bean.project.PUser;
+import com.system.exception.custom.UsernamePasswordException;
+import com.system.service.project.PUserService;
+import com.system.util.common.TextValidator;
+import com.system.util.result.Result;
+import com.system.util.result.ResultUtil;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiImplicitParams;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-
-import com.system.exception.custom.UsernamePasswordException;
-import com.system.service.project.PUserService;
-import com.system.util.common.TextValidator;
-import com.system.util.distributedUUID.Sid;
-import com.system.util.result.Result;
-import com.system.util.result.ResultUtil;
-
-import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiImplicitParam;
-import io.swagger.annotations.ApiImplicitParams;
-import io.swagger.annotations.ApiOperation;
 
 @Api(tags="注册")
 @Controller
@@ -28,16 +22,17 @@ public class RegisterController {
 	
 	@Autowired
 	PUserService pUserService;
-	@Resource
-	Sid sid;
-	
+
 //	@ApiOperation(value = "前往注册页面",httpMethod="GET",notes="登录及注册")
 //	@RequestMapping("/toRegister")
 //	public String toRegister() {
 //    	return "redorect:/register";
 //    }
 	
-    //注册表单处理
+	/**
+	 * 注册表单处理
+	 * @author dengpeilin
+	 */
 	@ApiOperation(value = "用户注册",httpMethod="POST",response=Result.class,notes="登录及注册",produces=MediaType.APPLICATION_JSON_VALUE)
 	@ApiImplicitParams({
 		@ApiImplicitParam(name="fAccount",value="用户账号",dataType="String",paramType="query",required=true),
@@ -46,7 +41,7 @@ public class RegisterController {
 		})
     @RequestMapping(value = "/handleRegister")
     @ResponseBody
-    public Object register(HttpServletRequest request, PUser user, String rePassword) throws Exception {
+    public Object register(PUser user, String rePassword) throws Exception {
     	System.out.println("注册账号:"+user.getfAccount()+ " , 注册密码:"+user.getfPassword() + " , 确认密码:"+rePassword);
     	System.out.println();
     	

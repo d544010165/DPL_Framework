@@ -64,7 +64,7 @@ public class PUserServiceImpl implements PUserService{
 			Date date = new Date();
 			//生成随机id
 			user.setfId(sid.nextShort());
-			//生成随机盐,并进行md5加密
+			//生成随机盐,拼接 md5加密的密码
 	    	String salt = Sid.next();
 	    	user.setfSalt(salt);
 	    	user.setfPassword( MD5Util.encode(user.getfPassword()) + salt);

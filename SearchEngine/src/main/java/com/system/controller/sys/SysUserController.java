@@ -38,9 +38,8 @@ public class SysUserController {
 
 	
 	/**
-	 * 
+	 * 分页查询数据
 	 * @author liyuanguo
-	 * @description 分页查询数据
 	 */
 	@ApiOperation(value = "用户列表查询",notes="用户管理",httpMethod="POST",response=Result.class,produces=MediaType.APPLICATION_JSON_VALUE)
 	@RequestMapping(value = "/queryAll")
@@ -53,9 +52,8 @@ public class SysUserController {
 	
 	
 	/**
-	 * 
+	 * 添加用户
 	 * @author liyuanguo
-	 * @description 添加用户
 	 */
 	@ApiOperation(value = "用户新增",notes="用户管理",httpMethod="POST",response=Result.class,produces=MediaType.APPLICATION_JSON_VALUE)
 	@RequestMapping(value = "/addSysUser")
@@ -70,8 +68,8 @@ public class SysUserController {
 	
 	
 	/**
+	 * 查询指定用户信息 主键
 	 * @author liyuanguo
-	 * @description 查询指定用户信息 主键
 	 */
 	@ApiOperation(value = "根据用户ID查询",notes="用户管理",httpMethod="POST",response=Result.class,produces=MediaType.APPLICATION_JSON_VALUE)
 	@RequestMapping(value = "/queryOneSysUserKey")
@@ -82,9 +80,8 @@ public class SysUserController {
 	}
 	
 	/**
-	 * 
+	 * 用户修改
 	 * @author liyuanguo
-	 * @description 用户修改
 	 */
 	@ApiOperation(value = "用户修改",notes="用户管理",httpMethod="POST",response=Result.class,produces=MediaType.APPLICATION_JSON_VALUE)
 	@RequestMapping(value = "/updateSysUser")
@@ -98,9 +95,8 @@ public class SysUserController {
 	}	
 	
 	/**
-	 * 
+	 * 删除指定用户
 	 * @author liyuanguo
-	 * @description 删除指定用户
 	 */
 	@ApiOperation(value = "用户删除",notes="用户管理",httpMethod="POST",response=Result.class,produces=MediaType.APPLICATION_JSON_VALUE)
 	@RequestMapping(value = "/deleteSysUser")
@@ -113,10 +109,8 @@ public class SysUserController {
 		return ResultUtil.result(500, "修改用户信息失败","");
 	}
 	/**
-	 * 
+	 * 获取当前用户
 	 * @author liyuanguo
-	 * @throws UserLoginException 
-	 * @description 获取当前用户
 	 */
 	@ApiOperation(value = "获取当前用户",notes="用户管理",httpMethod="POST",response=Result.class,produces=MediaType.APPLICATION_JSON_VALUE)
 	@RequestMapping(value = "/getCurrentUser")
@@ -145,9 +139,8 @@ public class SysUserController {
 	}
 	
 	/**
-	 * 
+	 * 根据名字查用户
 	 * @author liyuanguo
-	 * @description 根据名字查用户
 	 */
 	@ApiOperation(value = "根据名字查用户",notes="用户管理",httpMethod="POST",response=Result.class,produces=MediaType.APPLICATION_JSON_VALUE)
 	@RequestMapping(value = "/findByName")
