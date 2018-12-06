@@ -27,8 +27,8 @@ public class PuserController {
 	private PUserService pUserService;
 
 	/**
+	 * 分页查询数据
 	 * @author dengpeilin
-	 * @description 分页查询数据
 	 */
 	@ApiOperation(value = "用户列表查询", notes = "用户管理", httpMethod = "POST", response = Result.class, produces = MediaType.APPLICATION_JSON_VALUE)
 	@ApiImplicitParams({
@@ -45,8 +45,8 @@ public class PuserController {
 	}
 
 	/**
+	 * 查询指定用户信息 主键
 	 * @author dengpeilin
-	 * @description 查询指定用户信息 主键
 	 */
 	@ApiOperation(value = "根据用户ID查询", notes = "用户管理", httpMethod = "POST", response = Result.class, produces = MediaType.APPLICATION_JSON_VALUE)
 	@ApiImplicitParams({
@@ -60,8 +60,8 @@ public class PuserController {
 	}
 
 	/**
+	 * 用户修改
 	 * @author dengpeilin
-	 * @description 用户修改
 	 */
 	@ApiOperation(value = "用户修改", notes = "用户管理", httpMethod = "POST", response = Result.class, produces = MediaType.APPLICATION_JSON_VALUE)
 	@ApiImplicitParams({
@@ -105,8 +105,8 @@ public class PuserController {
 */
 
 	/**
+	 * 用户头像上传
 	 * @author dengpeilin
-	 * @description  用户头像上传
 	 */
 	@ApiOperation(value = "用户头像上传", notes = "用户管理", httpMethod = "POST", response = Result.class, produces = MediaType.APPLICATION_JSON_VALUE)
 	@RequestMapping(value = "/upload")
