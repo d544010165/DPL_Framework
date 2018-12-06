@@ -23,7 +23,7 @@ import io.swagger.annotations.ApiOperation;
 
 /**
  * @title AdminController.java
- * @author liyuanguo
+ * @author dengpeilin
  * @time 2018年7月16日 下午2:53:01
  * @description TODO
  * @version V1.0

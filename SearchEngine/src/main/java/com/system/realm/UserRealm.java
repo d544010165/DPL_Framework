@@ -61,11 +61,7 @@ public class UserRealm extends AuthorizingRealm {
         try {
         	
         	role = pUserService.selectRoleByName(username);
-//            PUser user = pUserService.selectRoleByName(username);
-//            list_r = sysUser.getRoles();
-//            SysUser sysUser_p=sysUserService.selectPermissionByUser(username);
-//            list_permission=sysUser_p.getPermissions();
-            		
+
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -74,21 +70,11 @@ public class UserRealm extends AuthorizingRealm {
         Set<String> r = new HashSet<String>();
         System.out.println("role.getfFullname(): "+role.getfFullname());
         r.add(role.getfFullname());
-        
-//        info.setRoles();
-/*        
-        if (list_r.size()>0&&list_r!=null) {
-        	for (SysRole sysRole: list_r) {
-        		System.out.println("Role.getfFullname(): " + sysRole.getfFullname());
-				r.add(sysRole.getfFullname());
-			}
-//          r.add(role.getRolename());
-            info.setRoles(r);
-        }
-*/        
-        
+
         info.setRoles(r);
-/*        //查询所有角色的所有权限
+
+
+/*        //查询所有角色的所有权限 ( 暂未使用权限等级制度 )
         //写入用户权限info.setStringPermissions();
         Set<String> perms = new HashSet<String>();
         if (list_permission.size()>0&&list_permission!=null) {
