@@ -14,8 +14,11 @@ public interface PUserService {
 	//注册用户
 	int registerUser(PUser user);
 	
-	//通过用户名查找 用户的角色
-	PRole selectRoleByName(String f_account);
+/*	//通过用户名查找 用户的角色 ( return PRole )
+	PRole selectRoleByName(String f_account);*/
+
+	//通过用户名查找 用户的角色 2 ( return Puser )
+	PUser selectRoleByName(String f_account);
 	
 	//通过用户名查找 用户
 	PUser findByName(String name);

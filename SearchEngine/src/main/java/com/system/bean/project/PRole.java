@@ -19,7 +19,7 @@ public class PRole {
     private String fOrganizeid;
 
     /**
-     * 分类:1-角色2-岗位
+     * 分类:1-管理员 2-公共用户
      */
     @Column(name = "F_CATEGORY")
     private Integer fCategory;
@@ -135,18 +135,18 @@ public class PRole {
     }
 
     /**
-     * 获取分类:1-角色2-岗位
+     * 获取分类:1-管理员 2-公共用户
      *
-     * @return F_CATEGORY - 分类:1-角色2-岗位
+     * @return F_CATEGORY - 分类:1-管理员 2-公共用户
      */
     public Integer getfCategory() {
         return fCategory;
     }
 
     /**
-     * 设置分类:1-角色2-岗位
+     * 设置分类:1-管理员 2-公共用户
      *
-     * @param fCategory 分类:1-角色2-岗位
+     * @param fCategory 分类:1-管理员 2-公共用户
      */
     public void setfCategory(Integer fCategory) {
         this.fCategory = fCategory;

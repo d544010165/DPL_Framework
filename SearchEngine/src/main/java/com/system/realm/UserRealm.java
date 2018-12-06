@@ -55,23 +55,21 @@ public class UserRealm extends AuthorizingRealm {
 		String username = (String) getAvailablePrincipal(principalCollection);
 
         
-        List<SysRole> list_r=null;
-        List<SysPermission> list_permission=null;
-        PRole role = null;
+        List<PRole> list_r = null;
+        PUser user = null;
         try {
-        	
-        	role = pUserService.selectRoleByName(username);
-
+        	user = pUserService.selectRoleByName(username);
+            list_r = user.getRoles();
         } catch (Exception e) {
             e.printStackTrace();
         }
         //通过用户名从数据库获取权限/角色信息
         SimpleAuthorizationInfo info = new SimpleAuthorizationInfo();
-        Set<String> r = new HashSet<String>();
-        System.out.println("role.getfFullname(): "+role.getfFullname());
-        r.add(role.getfFullname());
-
-        info.setRoles(r);
+        Set<String> set = new HashSet<String>();
+        for(PRole role : list_r){
+            set.add(role.getfFullname());
+        }
+        info.setRoles(set);
 
 
 /*        //查询所有角色的所有权限 ( 暂未使用权限等级制度 )

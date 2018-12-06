@@ -1,6 +1,7 @@
 package com.system.bean.project;
 
 import java.util.Date;
+import java.util.List;
 import javax.persistence.*;
 
 @Table(name = "p_user")
@@ -179,6 +180,15 @@ public class PUser {
 
     @Column(name = "F_SALT")
     private String fSalt;
+
+    //角色
+    private List<PRole> roles ;
+    public List<PRole> getRoles() {
+        return roles;
+    }
+    public void setRoles(List<PRole> roles) {
+        this.roles = roles;
+    }
 
     /**
      * @return F_ID

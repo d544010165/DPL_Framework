@@ -35,7 +35,20 @@
     <result column="F_DELETEUSERID" jdbcType="VARCHAR" property="fDeleteuserid" />
     <result column="F_PASSWORD" jdbcType="VARCHAR" property="fPassword" />
     <result column="F_SALT" jdbcType="VARCHAR" property="fSalt" />
+
+    <collection property="roles" resultMap="BaseResultRoles" />
   </resultMap>
+
+  <!-- 角色 -->
+  <resultMap  id="BaseResultRoles" type="com.system.bean.project.PRole">
+    <result column="F_ID"  jdbcType="VARCHAR" property="fId" />
+    <result column="F_ORGANIZEID" jdbcType="VARCHAR" property="fOrganizeid" />
+    <result column="F_CATEGORY" jdbcType="DECIMAL" property="fCategory" />
+    <result column="F_FULLNAME" jdbcType="VARCHAR" property="fFullname" />
+    <result column="F_RESPONSIBILITY" jdbcType="VARCHAR" property="fResponsibility" />
+    <result column="F_SORTCODE" jdbcType="DECIMAL" property="fSortcode" />
+  </resultMap>
+
 
   <!-- 更新用户头像 -->
   <update id="updateHeadIcon">
@@ -46,5 +59,22 @@
     WHERE
       u.F_ID=#{id}
   </update>
+
+  <!-- 通过用户名查找 用户的角色 2 ( return Puser ) -->
+  <select id="selectRoleByName" parameterType="java.lang.String" resultMap="BaseResultMap">
+    SELECT
+      u.*,r.F_ID,r.F_ORGANIZEID,r.F_CATEGORY,r.F_FULLNAME,r.F_RESPONSIBILITY,r.F_SORTCODE
+    FROM
+      P_USER u
+    LEFT JOIN P_USERROLE up ON u.F_ID=up.F_USERID
+    LEFT JOIN P_ROLE r ON r.F_ID= up.F_ROLEID
+    WHERE
+      u.F_ACCOUNT=#{f_account}
+    AND u.F_ENABLEDMARK=1 AND u.F_DELETEMARK=0
+    AND r.F_ENABLEDMARK=1 AND r.F_DELETEMARK=0
+    AND up.F_DELETEMARK=0
+  </select>
+
+
   
 </mapper>

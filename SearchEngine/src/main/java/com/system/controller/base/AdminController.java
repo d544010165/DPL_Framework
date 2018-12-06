@@ -33,7 +33,7 @@ import io.swagger.annotations.ApiOperation;
 public class AdminController {
 	
 	/**
-	  * 密码
+	  * @description 公共角色主页展示
 	  * @author dengpeilin
 	  */
 	@ApiOperation(value = "公共角色主页",httpMethod="GET")
@@ -44,7 +44,7 @@ public class AdminController {
 	}
 	
 	 /**
-	  * 管理员页面显示
+	  * @description 管理员页面显示
 	  * @author dengpeilin
 	  */
 	@ApiOperation(value = "管理员角色主页",httpMethod="GET")

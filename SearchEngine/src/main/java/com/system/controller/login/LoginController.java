@@ -41,7 +41,7 @@ public class LoginController {
 
 
     /**
-     * 登录表单处理 ( 暂未使用)
+     * @description 登录表单处理 ( 暂未使用)
      * @author dengpeilin
      */
     @RequestMapping(value = "/login", method = {RequestMethod.POST})

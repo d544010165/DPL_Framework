@@ -16,4 +16,10 @@ public interface PUserMapper extends MyMapper<PUser> {
     Integer updateHeadIcon(@Param("id") String id,
                            @Param("avatar") String avatar);
 
+
+    /**
+     * 通过用户名查找 用户的角色 2 ( return Puser )
+     * @param f_account 用户名
+     */
+    PUser selectRoleByName(String f_account) ;
 }

@@ -26,7 +26,7 @@ public class PuserController {
 	private PUserService pUserService;
 
 	/**
-	 * 分页查询数据
+	 * @description 分页查询数据
 	 * @author dengpeilin
 	 */
 	@ApiOperation(value = "用户列表查询", notes = "用户管理", httpMethod = "POST", response = Result.class, produces = MediaType.APPLICATION_JSON_VALUE)
@@ -44,7 +44,7 @@ public class PuserController {
 	}
 
 	/**
-	 * 查询指定用户信息 主键
+	 * @description 查询指定用户信息 主键
 	 * @author dengpeilin
 	 */
 	@ApiOperation(value = "根据用户ID查询", notes = "用户管理", httpMethod = "POST", response = Result.class, produces = MediaType.APPLICATION_JSON_VALUE)
@@ -59,7 +59,7 @@ public class PuserController {
 	}
 
 	/**
-	 * 用户修改
+	 * @description 用户修改
 	 * @author dengpeilin
 	 */
 	@ApiOperation(value = "用户修改", notes = "用户管理", httpMethod = "POST", response = Result.class, produces = MediaType.APPLICATION_JSON_VALUE)
@@ -92,9 +92,6 @@ public class PuserController {
 		return ResultUtil.result(500, "修改用户信息失败", "");
 	}
 
-
-
-
 /*
 	@RequestMapping(value = "/uploadHeadIcon",method = RequestMethod.POST)
 	public void uploadHeadIcon(@RequestParam("myfiles") MultipartFile[] files, HttpServletRequest request) throws Exception {
@@ -104,7 +101,7 @@ public class PuserController {
 */
 
 	/**
-	 * 用户头像上传
+	 * @description 用户头像上传
 	 * @author dengpeilin
 	 */
 	@ApiOperation(value = "用户头像上传", notes = "用户管理", httpMethod = "POST", response = Result.class, produces = MediaType.APPLICATION_JSON_VALUE)
@@ -114,5 +111,7 @@ public class PuserController {
 				@RequestParam("file") CommonsMultipartFile file) throws Exception {
 		return pUserService.updateHeadIcon(request,file);
 	}
+
+
 
 }

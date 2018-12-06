@@ -30,7 +30,7 @@ public class RegisterController {
 //    }
 	
 	/**
-	 * 注册表单处理
+	 * @description 注册表单处理
 	 * @author dengpeilin
 	 */
 	@ApiOperation(value = "用户注册",httpMethod="POST",response=Result.class,notes="登录及注册",produces=MediaType.APPLICATION_JSON_VALUE)

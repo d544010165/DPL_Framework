@@ -40,7 +40,7 @@ public class NewLoginController {
     }*/
 
 	/**
-	 * 登录表单处理 (使用中)
+	 * @description 登录表单处理 (使用中)
 	 * @author dengpeilin
 	 */
 	@ApiOperation(value = "用户登录",httpMethod="POST",response=Result.class,notes="登录及注册",produces=MediaType.APPLICATION_JSON_VALUE)

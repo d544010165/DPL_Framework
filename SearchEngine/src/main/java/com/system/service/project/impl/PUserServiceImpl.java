@@ -86,16 +86,20 @@ public class PUserServiceImpl implements PUserService{
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-    	
 		return pUserMapper.insert(user);
 	}
 
-	//通过用户名查找权限
+	//通过用户名查找 用户的角色 ( return PRole )
+/*	@Override
+	public PRole selectRoleByName(String f_account) {return pRoleMapper.selectRoleByName(f_account); }*/
+
+	//通过用户名查找 用户的角色 2 ( return Puser )
 	@Override
-	public PRole selectRoleByName(String f_account) {
-		return pRoleMapper.selectRoleByName(f_account);
+	public PUser selectRoleByName(String f_account) {
+		return pUserMapper.selectRoleByName(f_account);
 	}
-	
+
+
 	//通过用户名查找 用户
 	@Override
 	public PUser findByName(String f_account) {
@@ -141,6 +145,8 @@ public class PUserServiceImpl implements PUserService{
 		// 返回用户头像保存地址
 		return ResultUtil.result(Result.STATUS_SUCCEED,"上传头像成功",avatar);
 	}
-	
+
+
+
 	
 }
