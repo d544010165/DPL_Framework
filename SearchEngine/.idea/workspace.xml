@@ -7,12 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5396e1b4-bfc2-46a3-9414-e21c10bd4ae6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bgee_log4jdbc_log4j2_log4jdbc_log4j2_jdbc4_1_1_16.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/SearchEngine_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/SearchEngine_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SearchEngine.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SearchEngine.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SearchEngine/WEB-INF/classes/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/SearchEngine/WEB-INF/classes/log4j2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/log4j2.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -115,8 +112,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/log4j2.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="11" column="32" lean-forward="true" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+            <state relative-caret-position="232">
+              <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="17" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -389,7 +386,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544081244576" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544081599086" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -520,7 +517,7 @@
       <workItem from="1543994685341" duration="3528000" />
       <workItem from="1544000105079" duration="2925000" />
       <workItem from="1544057440660" duration="9592000" />
-      <workItem from="1544068460758" duration="6492000" />
+      <workItem from="1544068460758" duration="7077000" />
     </task>
     <task id="LOCAL-00001" summary="测试修改了该项目">
       <created>1543996099494</created>
@@ -662,11 +659,18 @@
       <option name="project" value="LOCAL" />
       <updated>1544078854098</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="测试修改了该项目">
+      <created>1544081257475</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1544081257475</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78927000" />
+    <option name="totallyTimeSpent" value="79512000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -689,8 +693,8 @@
       <window_info id="Designer" order="5" />
       <window_info content_ui="combo" id="Project" order="6" sideWeight="0.49675325" visible="true" weight="0.1924307" />
       <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Spring" order="0" weight="0.32900432" />
-      <window_info anchor="bottom" id="Terminal" order="1" weight="0.32929516" />
+      <window_info anchor="bottom" id="Spring" order="0" weight="0.32827735" />
+      <window_info anchor="bottom" id="Terminal" order="1" weight="0.32827735" />
       <window_info anchor="bottom" id="Docker" order="2" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.20415778" side_tool="true" weight="0.283857" />
       <window_info anchor="bottom" id="Messages" order="4" weight="0.23726977" />
@@ -1154,8 +1158,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/log4j2.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="11" column="32" lean-forward="true" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+        <state relative-caret-position="232">
+          <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="17" selection-end-column="16" />
         </state>
       </provider>
     </entry>

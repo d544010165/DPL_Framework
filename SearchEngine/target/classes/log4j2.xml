@@ -6,11 +6,12 @@
         </Console>  
     </Appenders>
 
-    <settings>
-        <setting name="logImpl" value="STDOUT_LOGGING" />
-    </settings>
+    <Loggers>
+        <!-- 下面是打印通过log4j2打印出mybatis语句的配置-->
+        <logger name="com.system.mapper.project">
+            <level>DEBUG</level>
+        </logger>
 
-    <Loggers>  
         <Root level="debug">  
             <AppenderRef ref="Console" />  
         </Root>  
