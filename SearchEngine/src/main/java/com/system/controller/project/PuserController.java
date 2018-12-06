@@ -112,6 +112,16 @@ public class PuserController {
 		return pUserService.updateHeadIcon(request,file);
 	}
 
+	/**
+	 * @description 测试用通过用户名获取用户和角色信息
+	 * @author dengpeilin
+	 */
+	@ApiOperation(value = "测试用通过用户名获取用户和角色信息", notes = "测试", httpMethod = "GET", response = Result.class, produces = MediaType.APPLICATION_JSON_VALUE)
+	@RequestMapping(value = "/selectRoleByName")
+	@ResponseBody
+	public Result selectRoleByName(HttpServletRequest request,String f_account) {
+		return ResultUtil.result(Result.STATUS_SUCCEED,"查询成功!",pUserService.selectRoleByName(f_account));
+	}
 
 
 }

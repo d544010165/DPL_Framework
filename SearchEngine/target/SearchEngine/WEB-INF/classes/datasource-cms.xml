@@ -54,12 +54,14 @@
 	    </property>
 	</bean>
 
+
+
 	<!-- define the SqlSessionFactory -->
 	<bean id="sqlSessionFactoryCms" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="dataSource" ref="dataSourceCms" />
 		<property name="configuration" ref="mybatisConfigCms"/><!-- 通用 Mapper注入 -->
 		<property name="typeAliasesPackage" value="com.system.bean" />
-		<!-- <property name="configLocation" value="classpath:mybatis.cfg.xml" /> -->
+		 <!--<property name="configLocation" value="classpath:logConfig/mybatis-cfg.xml" />-->
 		<property name="mapperLocations" value="classpath*:com/system/mapper/**/*.xml" />
 		<property name="plugins">
 	        <array>
@@ -78,7 +80,7 @@
     	</property>
 	</bean>
 
-	<!-- 多数据源的切换时根据这里的包名路径，决定用哪一个dao -->
+	<!-- 多数据源的切换时根据这里的   包名路径，决定用哪一个dao -->
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
 		<property name="sqlSessionFactoryBeanName" value="sqlSessionFactoryCms"/>
 		<property name="basePackage" value="com.system.dao.sourceCms" /><!-- 不能取名 .dao 会与其他冲突 -->
@@ -114,5 +116,5 @@
        <aop:pointcut id="allManagerMethodCms" expression="execution(* com.system.service.*.*.*(..))"/>
        <aop:advisor advice-ref="txAdviceCms" pointcut-ref="allManagerMethodCms"/>
     </aop:config>
-    
+
 </beans>

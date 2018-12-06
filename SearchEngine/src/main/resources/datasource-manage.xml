@@ -59,7 +59,7 @@
 		<property name="dataSource" ref="dataSourceManage" />
 		<property name="configuration" ref="mybatisConfigManage"/><!-- 通用 Mapper注入 -->
 		<property name="typeAliasesPackage" value="com.system.bean" />
-		<!-- <property name="configLocation" value="classpath:mybatis.cfg.xml" /> -->
+		<!-- <property name="configLocation" value="classpath:mybatis-cfg.xml" /> -->
 		<property name="mapperLocations" value="classpath*:com/system/mapper/**/*.xml" />
 		<property name="plugins">
 	        <array>
