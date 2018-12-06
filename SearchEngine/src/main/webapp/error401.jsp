@@ -25,7 +25,7 @@
 			<p class="links">
 				<a href="javascript:history.back(-1)">返回上一页</a>
 			</p>
-		</div>
+		</div>   
 		
 	</body>
 </html>
