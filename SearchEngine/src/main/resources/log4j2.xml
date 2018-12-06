@@ -8,7 +8,7 @@
 
     <Loggers>
         <!-- 下面是打印通过log4j2打印出mybatis语句的配置-->
-        <logger name="com.system.mapper.project">
+        <logger name="com.system">
             <level>DEBUG</level>
         </logger>
 
