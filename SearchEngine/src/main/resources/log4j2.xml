@@ -4,7 +4,11 @@
         <Console name="Console" target="SYSTEM_OUT">  
             <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />  
         </Console>  
-    </Appenders>  
+    </Appenders>
+
+    <settings>
+        <setting name="logImpl" value="STDOUT_LOGGING" />
+    </settings>
 
     <Loggers>  
         <Root level="debug">  
