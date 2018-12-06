@@ -1,18 +1,10 @@
 package com.system.realm;
 
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-import java.util.concurrent.ConcurrentHashMap;
-
+import com.system.bean.project.PRole;
 import com.system.bean.project.PUser;
+import com.system.service.project.PUserService;
 import org.apache.shiro.SecurityUtils;
-import org.apache.shiro.authc.AuthenticationInfo;
-import org.apache.shiro.authc.AuthenticationToken;
-import org.apache.shiro.authc.IncorrectCredentialsException;
-import org.apache.shiro.authc.SimpleAuthenticationInfo;
-import org.apache.shiro.authc.UnknownAccountException;
+import org.apache.shiro.authc.*;
 import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.authz.SimpleAuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;
@@ -20,10 +12,11 @@ import org.apache.shiro.subject.PrincipalCollection;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import com.system.bean.project.PRole;
-import com.system.bean.sys.SysPermission;
-import com.system.bean.sys.SysRole;
-import com.system.service.project.PUserService;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * 
@@ -69,6 +62,7 @@ public class UserRealm extends AuthorizingRealm {
         for(PRole role : list_r){
             set.add(role.getfFullname());
         }
+        System.out.println("当前用户Roles:　"+ set.toString());
         info.setRoles(set);
 
 

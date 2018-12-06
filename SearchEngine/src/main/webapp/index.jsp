@@ -22,6 +22,6 @@
 	
 	<a href="http://127.0.0.1:8083/SearchEngine/shiro-cas">搜索引擎系统</a>
 	
-	<a href="http://localhost:375/SearchEngine/logout">单点登出</a>
+	<a href="http://localhost:999/SearchEngine_war_exploded/logout">单点登出</a>
 </body>
 </html>

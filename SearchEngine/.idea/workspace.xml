@@ -7,21 +7,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5396e1b4-bfc2-46a3-9414-e21c10bd4ae6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/system/bean/project/PRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/system/bean/project/PRole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/system/bean/project/PUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/system/bean/project/PUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/system/controller/base/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/system/controller/base/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/system/controller/converter/CustomDateConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/system/controller/converter/CustomDateConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/system/controller/login/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/system/controller/login/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/system/controller/login/NewLoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/system/controller/login/NewLoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/system/controller/login/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/system/controller/login/RegisterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/system/controller/project/PuserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/system/controller/project/PuserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/system/dao/sourceCms/project/PRoleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/system/dao/sourceCms/project/PRoleMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/system/dao/sourceCms/project/PUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/system/dao/sourceCms/project/PUserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/system/mapper/project/PRoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/system/mapper/project/PRoleMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/system/mapper/project/PUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/system/mapper/project/PUserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/system/realm/UserRealm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/system/realm/UserRealm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/system/service/project/PUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/system/service/project/PUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/system/service/project/impl/PUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/system/service/project/impl/PUserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/system/controller/project/PuserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/system/controller/project/PuserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/system/dao/sourceCms/project/PRoleMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/system/dao/sourceCms/project/PRoleMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/system/mapper/project/PRoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/system/mapper/project/PRoleMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/system/realm/UserRealm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/system/realm/UserRealm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/system/service/project/PUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/system/service/project/PUserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/system/service/project/impl/PUserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/system/service/project/impl/PUserServiceImpl.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,8 +46,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/system/realm/UserRealm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="64" column="9" lean-forward="true" selection-start-line="64" selection-start-column="9" selection-end-line="64" selection-end-column="9" />
+            <state relative-caret-position="232">
+              <caret line="63" column="9" lean-forward="true" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -123,11 +117,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/system/controller/project/PuserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="536">
-              <caret line="114" lean-forward="true" selection-start-line="114" selection-end-line="114" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="275">
+              <caret line="102" column="7" lean-forward="true" selection-start-line="102" selection-start-column="7" selection-end-line="102" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -202,6 +193,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/system/mapper/project/PRoleMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/system/service/project/impl/PUserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/system/service/project/PUserService.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/system/realm/UserRealm.java" />
       </list>
     </option>
@@ -407,7 +399,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544063843597" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544064490540" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -534,7 +526,7 @@
       <workItem from="1543982823812" duration="2641000" />
       <workItem from="1543994685341" duration="3528000" />
       <workItem from="1544000105079" duration="2925000" />
-      <workItem from="1544057440660" duration="6376000" />
+      <workItem from="1544057440660" duration="6972000" />
     </task>
     <task id="LOCAL-00001" summary="测试修改了该项目">
       <created>1543996099494</created>
@@ -648,11 +640,18 @@
       <option name="project" value="LOCAL" />
       <updated>1544060347221</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="测试修改了该项目">
+      <created>1544063924066</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1544063924066</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69219000" />
+    <option name="totallyTimeSpent" value="69815000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -673,7 +672,7 @@
       <window_info id="Favorites" order="3" sideWeight="0.5011013" side_tool="true" weight="0.24983476" />
       <window_info id="Web" order="4" sideWeight="0.5032467" side_tool="true" weight="0.19402985" />
       <window_info id="Designer" order="5" />
-      <window_info active="true" content_ui="combo" id="Project" order="6" sideWeight="0.49675325" visible="true" weight="0.19029851" />
+      <window_info content_ui="combo" id="Project" order="6" sideWeight="0.49675325" visible="true" weight="0.19029851" />
       <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Spring" order="0" weight="0.32900432" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.32929516" />
@@ -686,7 +685,7 @@
       <window_info anchor="bottom" id="Application Servers" order="8" weight="0.32719395" />
       <window_info anchor="bottom" id="Message" order="9" />
       <window_info anchor="bottom" id="Find" order="10" weight="0.29761904" />
-      <window_info anchor="bottom" id="Run" order="11" sideWeight="0.79584223" visible="true" weight="0.39653304" />
+      <window_info active="true" anchor="bottom" id="Run" order="11" sideWeight="0.79584223" visible="true" weight="0.39653304" />
       <window_info anchor="bottom" id="Debug" order="12" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="13" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="14" weight="0.4" />
@@ -754,20 +753,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/datasource-cms.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-806">
-          <caret line="67" column="31" lean-forward="true" selection-start-line="67" selection-start-column="31" selection-end-line="67" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/bootstrap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="1583" column="28" lean-forward="true" selection-start-line="1583" selection-start-column="28" selection-end-line="1583" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="281">
@@ -1121,16 +1106,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/system/controller/project/PuserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="536">
-          <caret line="114" lean-forward="true" selection-start-line="114" selection-end-line="114" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/system/service/project/impl/PUserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
@@ -1153,10 +1128,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="68" column="117" lean-forward="true" selection-start-line="68" selection-start-column="83" selection-end-line="68" selection-end-column="117" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="24" column="76" lean-forward="true" selection-start-line="24" selection-start-column="76" selection-end-line="24" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/system/controller/project/PuserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="102" column="7" lean-forward="true" selection-start-line="102" selection-start-column="7" selection-end-line="102" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/system/realm/UserRealm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="64" column="9" lean-forward="true" selection-start-line="64" selection-start-column="9" selection-end-line="64" selection-end-column="9" />
+        <state relative-caret-position="232">
+          <caret line="63" column="9" lean-forward="true" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
         </state>
       </provider>
     </entry>
