@@ -3,7 +3,7 @@
 <generatorConfiguration>
 	<!-- 引入配置文件 -->
 	<properties resource="database.properties"/>
-    <classPathEntry location="C:\Users\java\.m2\repository\mysql\mysql-connector-java\5.1.45\mysql-connector-java-5.1.45.jar"/>
+    <classPathEntry location="C:\Users\dpl\.m2\repository\mysql\mysql-connector-Java\5.1.45\mysql-connector-java-5.1.45.jar"/>
 	<context id="context1" targetRuntime="MyBatis3Simple" defaultModelType="flat">
 		<property name="beginningDelimiter" value="`"/>
         <property name="endingDelimiter" value="`"/>
