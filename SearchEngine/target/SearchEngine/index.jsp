@@ -14,7 +14,7 @@
     <div class="layui-container">
       <!-- 公司logo -->
       <div class="nav-logo">
-        <a href="index.index.jsp">
+        <a href="index.jsp">
           <img src="./res/static/img/logo.png" alt="dpl">
         </a>
       </div>
@@ -24,6 +24,8 @@
         </button>
         <ul class="layui-nav" lay-filter="">
           <li class="layui-nav-item layui-this"><a href="index.jsp">首页</a></li>
+          <li class="layui-nav-item"><a href="login.jsp">登录</a></li>
+          <li class="layui-nav-item"><a href="logout">退出登录</a></li>
           <!--<li class="layui-nav-item"><a href="product.html">产品</a></li>-->
           <!--<li class="layui-nav-item"><a href="news.html">动态</a></li>-->
           <!--<li class="layui-nav-item"><a href="case.html">案例</a></li>-->
@@ -137,10 +139,11 @@
           <div class="layui-row">
             <div class="layui-col-sm6 layui-col-md8 layui-col-lg9">
               <p class="contact-top"><i class="layui-icon layui-icon-cellphone"></i>&nbsp;+86 18190738991&nbsp;&nbsp;&nbsp;(9:00-18:00)</p>
-              <p class="contact-bottom"><i class="layui-icon layui-icon-home"></i>&nbsp;544010165@qq.com</span></p>
+              <p class="contact-bottom"><i class="layui-icon layui-icon-home"></i>&nbsp;544010165@qq.com</p>
             </div>
             <div class="layui-col-sm6 layui-col-md4 layui-col-lg3">
               <p class="contact-top"><span class="right">四川省成都市成华区华茂大厦</span></p>
+              <p class="contact-bottom"><span class="right">Copyright&nbsp;©&nbsp;2016-2018&nbsp;&nbsp;ICP&nbsp;备888888号</span></p>
             </div>
           </div>
         </div>
@@ -155,7 +158,7 @@
 <script>
   layui.config({
     base: './res/static/js/'
-  }).use('firm'); 
+  }).use('firm');
 </script>
 </body>
 </html>
