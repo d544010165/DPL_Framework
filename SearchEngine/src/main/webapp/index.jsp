@@ -23,11 +23,11 @@
           <span></span><span></span><span></span>
         </button>
         <ul class="layui-nav" lay-filter="">
-          <li class="layui-nav-item layui-this"><a href="index.index.jsp">首页</a></li>
+          <li class="layui-nav-item layui-this"><a href="index.jsp">首页</a></li>
           <!--<li class="layui-nav-item"><a href="product.html">产品</a></li>-->
           <!--<li class="layui-nav-item"><a href="news.html">动态</a></li>-->
           <!--<li class="layui-nav-item"><a href="case.html">案例</a></li>-->
-          <li class="layui-nav-item"><a href="about.about.jsp">关于</a></li>
+          <li class="layui-nav-item"><a href="about.jsp">关于</a></li>
         </ul>
       </div>
     </div>
@@ -154,7 +154,7 @@
 <![endif]-->
 <script>
   layui.config({
-    base: './res/static/js/' 
+    base: './res/static/js/'
   }).use('firm'); 
 </script>
 </body>
