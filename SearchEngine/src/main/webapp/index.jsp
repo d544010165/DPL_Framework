@@ -1,11 +1,12 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
   <title>dpl-首页</title>
-  <link rel="stylesheet" href="../res/layui/css/layui.css">
-  <link rel="stylesheet" href="../res/static/css/index.css">
+  <link rel="stylesheet" href="./res/layui/css/layui.css">
+  <link rel="stylesheet" href="./res/static/css/index.css">
 </head>
 <body>
   <!-- nav部分 -->
@@ -14,7 +15,7 @@
       <!-- 公司logo -->
       <div class="nav-logo">
         <a href="index.index.jsp">
-          <img src="../res/static/img/logo.png" alt="dpl">
+          <img src="./res/static/img/logo.png" alt="dpl">
         </a>
       </div>
       <div class="nav-list">
@@ -36,14 +37,14 @@
     <div class="layui-carousel" id="banner">
       <div carousel-item>
         <div>
-          <img src="../res/static/img/banner1.jpg">
+          <img src="./res/static/img/banner1.jpg">
           <div class="panel">
             <p class="title">dpl</p>
             <p>完美操作体验</p>
           </div>
         </div>
         <div>
-          <img src="../res/static/img/banner2.jpg">
+          <img src="./res/static/img/banner2.jpg">
           <div class="panel">
             <p class="title">dpl</p>
             <p>完美操作体验</p>
@@ -59,7 +60,7 @@
       <div class="layui-row layui-col-space25">
         <div class="layui-col-sm6 layui-col-md3">
           <div class="content">
-            <div><img src="../res/static/img/Big_icon1.png"></div>
+            <div><img src="./res/static/img/Big_icon1.png"></div>
             <div>
               <p class="label">服务器搭建</p>
               <p>从小屏逐步扩展到大屏，最终实现所有屏幕适配，适应移动互联潮流。</p>
@@ -69,7 +70,7 @@
         </div>
         <div class="layui-col-sm6 layui-col-md3 ">
           <div class="content">
-            <div><img src="../res/static/img/Big_icon2.png"></div>
+            <div><img src="./res/static/img/Big_icon2.png"></div>
             <div>
               <p class="label">视觉设计</p>
               <p>从小屏逐步扩展到大屏，最终实现所有屏幕适配，适应移动互联潮流。</p>
@@ -79,7 +80,7 @@
         </div>
         <div class="layui-col-sm6 layui-col-md3 ">
           <div class="content">
-            <div><img src="../res/static/img/Big_icon3.png"></div>
+            <div><img src="./res/static/img/Big_icon3.png"></div>
             <div>
               <p class="label">兼容性</p>
               <p>从小屏逐步扩展到大屏，最终实现所有屏幕适配，适应移动互联潮流。</p>
@@ -89,7 +90,7 @@
         </div>
         <div class="layui-col-sm6 layui-col-md3 ">
           <div class="content">
-            <div><img src="../res/static/img/Big_icon4.png"></div>
+            <div><img src="./res/static/img/Big_icon4.png"></div>
             <div>
               <p class="label">创意性</p>
               <p>从小屏逐步扩展到大屏，最终实现所有屏幕适配，适应移动互联潮流。</p>
@@ -106,12 +107,12 @@
       <div class="layui-row layui-col-space25 layui-col-space80">
         <div class="layui-col-sm6">
           <div class="content">
-            <div class="content-left"><img src="../res/static/img/home_img1.jpg"></div>
+            <div class="content-left"><img src="./res/static/img/home_img1.jpg"></div>
           </div>
         </div>
         <div class="layui-col-sm6">
           <div class="content">
-            <div class="content-left"><img src="../res/static/img/home_img2.jpg"></div>
+            <div class="content-left"><img src="./res/static/img/home_img2.jpg"></div>
             <div class="content-right">
               <p class="label">1 对 1 前端指导</p>
               <span></span>
@@ -131,7 +132,7 @@
         <a href="javascript:;">dpl</a>
       </p>
       <div class="layui-row footer-contact">
-        <div class="layui-col-sm2 layui-col-lg1"><img src="../res/static/img/erweima.jpg"></div>
+        <div class="layui-col-sm2 layui-col-lg1"><img src="./res/static/img/erweima.jpg"></div>
         <div class="layui-col-sm10 layui-col-lg11">
           <div class="layui-row">
             <div class="layui-col-sm6 layui-col-md8 layui-col-lg9">
@@ -146,14 +147,14 @@
       </div>
     </div>
   </div>
-<script src="../res/layui/layui.js"></script>
+<script src="./res/layui/layui.js"></script>
 <!--[if lt IE 9]>
   <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
   <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 <script>
   layui.config({
-    base: '../res/static/js/' 
+    base: './res/static/js/' 
   }).use('firm'); 
 </script>
 </body>

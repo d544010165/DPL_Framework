@@ -92,6 +92,7 @@ public class PuserController {
 		return ResultUtil.result(500, "修改用户信息失败", "");
 	}
 
+
 /*
 	@RequestMapping(value = "/uploadHeadIcon",method = RequestMethod.POST)
 	public void uploadHeadIcon(@RequestParam("myfiles") MultipartFile[] files, HttpServletRequest request) throws Exception {
@@ -99,7 +100,6 @@ public class PuserController {
 		pUserService.uploadHeadIcon(request,files);
 	}
 */
-
 	/**
 	 * @description 用户头像上传
 	 * @author dengpeilin
@@ -122,6 +122,7 @@ public class PuserController {
 	public Result selectRoleByName(HttpServletRequest request,String f_account) {
 		return ResultUtil.result(Result.STATUS_SUCCEED,"查询成功!",pUserService.selectRoleByName(f_account));
 	}
+
 
 
 }
