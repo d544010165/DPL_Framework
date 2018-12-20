@@ -50,7 +50,13 @@ public class RegisterController {
     			user.getfAccount(), user.getfPassword())){ 
     		throw new UsernamePasswordException("用户名或密码不能为空,请重新输入!");
     	}
-    	
+
+    	//验证该用户是否存在
+		System.out.println(pUserService.findByName(user.getfAccount()));
+    	if(pUserService.findByName(user.getfAccount())!=null){
+			throw new UsernamePasswordException("用户名已被占用,请重新输入!");
+		}
+
     	//正则验证数据格式,如果不符合,则直接响应
     	if(!TextValidator.checkUserName(user.getfAccount())){
     		throw new UsernamePasswordException("请输入符合规则的用户名: 支持中英文（包括全角字符）、数字、下划线和减号 （全角及汉字算两位）,长度为4-20位");
@@ -62,7 +68,7 @@ public class RegisterController {
     	
     	//注册业务
     	if(pUserService.registerUser(user) > 0){
-    		return ResultUtil.result(Result.STATUS_SUCCEED, "注册成功! 是否自动登录?","");
+    		return ResultUtil.result(Result.STATUS_SUCCEED, "注册成功!","");
     	}else{
     		return ResultUtil.result(Result.STATUS_FAILED, "网络异常, 请重试!","");
     	}
