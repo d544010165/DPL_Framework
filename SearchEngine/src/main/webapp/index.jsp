@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
-  <title>dpl-首页</title>
+  <title>DPL-首页</title>
   <link rel="stylesheet" href="./res/layui/css/layui.css">
   <link rel="stylesheet" href="./res/static/css/index.css">
 </head>
@@ -15,7 +15,7 @@
       <!-- 公司logo -->
       <div class="nav-logo">
         <a href="index.jsp">
-          <img src="./res/static/img/logo.png" alt="dpl">
+          <img src="./res/static/img/logo.png" alt="DPL">
         </a>
       </div>
       <div class="nav-list">
@@ -41,15 +41,15 @@
         <div>
           <img src="./res/static/img/banner1.jpg">
           <div class="panel">
-            <p class="title">dpl</p>
-            <p>完美操作体验</p>
+            <p class="title">DPL</p>
+            <p>框架测试主页</p>
           </div>
         </div>
         <div>
           <img src="./res/static/img/banner2.jpg">
           <div class="panel">
-            <p class="title">dpl</p>
-            <p>完美操作体验</p>
+            <p class="title">DPL</p>
+            <p>框架测试主页</p>
           </div>
         </div>
       </div>
@@ -58,7 +58,7 @@
   <!-- main部分 -->
   <div class="main-product">
     <div class="layui-container">
-      <p class="title">专为客户而研制的<span>核心产品</span></p>
+      <%--<p class="title">专为客户而研制的<span>核心产品</span></p>--%>
       <div class="layui-row layui-col-space25">
         <div class="layui-col-sm6 layui-col-md3">
           <div class="content">
@@ -103,6 +103,7 @@
       </div>
     </div>
   </div>
+  <!--
   <div class="main-service">
     <div class="layui-container">
       <p class="title">为客户打造完美的<span>专业服务</span></p>
@@ -126,12 +127,14 @@
       <div class="service-more"><a href="">查看更多</a></div>
     </div>
   </div>
+  -->
+
   <!-- footer部分 -->
   <div class="footer">
     <div class="layui-container">
       <p class="footer-web">
         <a href="javascript:;">合作伙伴</a>
-        <a href="javascript:;">dpl</a>
+        <a href="javascript:;">DPL</a>
       </p>
       <div class="layui-row footer-contact">
         <div class="layui-col-sm2 layui-col-lg1"><img src="./res/static/img/erweima.jpg"></div>
@@ -142,7 +145,7 @@
               <p class="contact-bottom"><i class="layui-icon layui-icon-home"></i>&nbsp;544010165@qq.com</p>
             </div>
             <div class="layui-col-sm6 layui-col-md4 layui-col-lg3">
-              <p class="contact-top"><span class="right">四川省成都市成华区华茂大厦</span></p>
+              <p class="contact-top"><span class="right">地址: XXXX XXXX</span></p>
               <p class="contact-bottom"><span class="right">Copyright&nbsp;©&nbsp;2016-2018&nbsp;&nbsp;ICP&nbsp;备888888号</span></p>
             </div>
           </div>

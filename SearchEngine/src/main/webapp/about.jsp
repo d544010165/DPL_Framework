@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
-  <title>dpl-关于</title>
+  <title>DPL-关于</title>
   <link rel="stylesheet" href="./res/layui/css/layui.css">
   <link rel="stylesheet" href="./res/static/css/index.css">
 </head>
@@ -15,7 +15,7 @@
       <!-- 公司logo -->
       <div class="nav-logo">
         <a href="index.jsp">
-          <img src="./res/static/img/logo.png" alt="dpl">
+          <img src="./res/static/img/logo.png" alt="DPL">
         </a>
       </div>
       <div class="nav-list">
@@ -66,7 +66,9 @@
             </div>
           </div>         
         </div>
+
         <div class="tabJob">
+          <!--
           <div class="content">
             <p class="title">前端开发工程师</p>
             <p>> 职位描述</p>
@@ -78,7 +80,7 @@
               <li>了解不同浏览器之间的差异，移动设备之间的差异。</li>
             </ol>
           </div>
-          <!--<div class="content">
+          <div class="content">
             <p class="title">前端开发工程师</p>
             <p>> 职位描述</p>
             <ol>
@@ -127,7 +129,7 @@
     <div class="layui-container">
       <p class="footer-web">
         <a href="javascript:;">合作伙伴</a>
-        <a href="javascript:;">dpl</a>
+        <a href="javascript:;">DPL</a>
       </p>
       <div class="layui-row footer-contact">
         <div class="layui-col-sm2 layui-col-lg1"><img src="./res/static/img/erweima.jpg"></div>
@@ -138,7 +140,7 @@
               <p class="contact-bottom"><i class="layui-icon layui-icon-home"></i>&nbsp;544010165@qq.com</p>
             </div>
             <div class="layui-col-sm6 layui-col-md4 layui-col-lg3">
-              <p class="contact-top"><span class="right">四川省成都市成华区华茂大厦</span></p>
+              <p class="contact-top"><span class="right">地址: XXXX XXXX</span></p>
               <p class="contact-bottom"><span class="right">Copyright&nbsp;©&nbsp;2016-2018&nbsp;&nbsp;ICP&nbsp;备888888号</span></p>
             </div>
           </div>
